@@ -24,6 +24,10 @@ a {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
+img {
+  width: 100%;
+  height: auto;
+}
 .container {
   width: 1240px;
   padding: 0 20px;
@@ -33,14 +37,91 @@ a {
 .main-button {
   background-color: var(--primary-color);
   color: var(--white);
-  padding: 12px 30px;
+  padding: 15px 40px;
   border-radius: 999px;
   border: 1px solid var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.main-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 .main-button i {
   margin-left: 10px;
+}
+
+header {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+.nav-brand a {
+  color: var(--title-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+.navs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+.navs-wrapper a {
+  color: var(--title-color);
+  font-weight: 600;
+  margin-left: 30px;
+}
+.navs-wrapper a i {
+  font-size: 20px;
+}
+.navs-wrapper a.cart-icon {
+  margin-left: 30px;
+}
+.navs-wrapper a:hover {
+  color: var(--primary-color);
+}
+
+.banner-section {
+  padding: 100px 0;
+}
+.banner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-wrapper .text-part {
+  width: 50%;
+}
+.banner-wrapper .img-part {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-wrapper .img-part .img-layout {
+  position: relative;
+}
+.banner-wrapper .img-part .main-img {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 80%;
+}
+.banner-wrapper .text-part h2 {
+  font-size: 52px;
+  line-height: 65px;
+  margin-bottom: 20px;
+}
+.banner-wrapper .text-part p {
+  margin-bottom: 30px;
 }
