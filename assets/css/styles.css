@@ -241,10 +241,6 @@ header nav {
   -webkit-transition: all 0.4s;
 }
 
-.collection-item:hover img {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
 .collection-item:hover .collection-title a {
   color: var(--primary-color);
 }
